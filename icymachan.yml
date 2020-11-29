@@ -1,0 +1,2608 @@
+allow-lan: true
+bind-address: '*'
+dns:
+  enable: false
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+  - '*.lan'
+  - '*.edu.cn'
+  - localhost.ptlogin2.qq.com
+  - '*.*.*.srv.nintendo.net'
+  - '*.*.stun.playstation.net'
+  - xbox.*.*.microsoft.com
+  - '*.*.xboxlive.com'
+  - '*.msftncsi.com'
+  - www.msftconnecttest.com
+  fake-ip-range: 198.18.0.1/16
+  fallback:
+  - tls://dns.rubyfish.cn:853
+  fallback-filter:
+    geoip: true
+    ipcidr: null
+  ipv6: true
+  listen: 0.0.0.0:53
+  nameserver:
+  - 223.5.5.5
+  - 223.6.6.6
+  use-hosts: true
+external-controller: 127.0.0.1:9090
+hosts: null
+ipv6: true
+log-level: info
+mixed-port: 7890
+mode: rule
+port: 10809
+proxies:
+- alterId: 0
+  cipher: auto
+  name: 回国线路
+  network: tcp
+  port: 10000
+  server: node-cn-xu.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 英国 Netflix BBC ITV C4 F4
+  network: tcp
+  port: 443
+  server: node-vm-uk.kyvip.pw
+  servername: node-vm-uk.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-vm-uk.kyvip.pw
+- alterId: 0
+  cipher: none
+  name: 俄罗斯伯力1
+  network: tcp
+  port: 443
+  server: node-rug.kyvip.pw
+  servername: node-rug.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-rug.kyvip.pw
+- alterId: 0
+  cipher: none
+  name: 韩国1 Netflix
+  network: tcp
+  port: 443
+  server: node-kr-kt.kyvip.pw
+  servername: node-kr-kt.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-kr-kt.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM B -> 韩国1 Netflix
+  network: tcp
+  port: 31153
+  server: node-cn-gzb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 A -> 韩国1 Netflix
+  network: tcp
+  port: 31153
+  server: node-cn-shh.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 韩国2 Netflix
+  network: tcp
+  port: 443
+  server: node-kr-seoul.kyvip.pw
+  servername: node-kr-seoul.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-kr-seoul.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM B -> 韩国2 Netflix
+  network: tcp
+  port: 31154
+  server: node-cn-gzb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 A -> 韩国2 Netflix
+  network: tcp
+  port: 31154
+  server: node-cn-shh.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 台湾N Hinet Netflix
+  network: tcp
+  port: 443
+  server: node-tw-hit.kyvip.pw
+  servername: node-tw-hit.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-tw-hit.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM B -> 台湾N Hinet Netflix
+  network: tcp
+  port: 33018
+  server: node-cn-gzb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 A -> 台湾N Hinet Netflix
+  network: tcp
+  port: 31133
+  server: node-cn-shh.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 台湾S Hinet Netflix
+  network: tcp
+  port: 443
+  server: node-tw-chg.kyvip.pw
+  servername: node-tw-chg.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-tw-chg.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM B -> 台湾S Hinet Netflix
+  network: tcp
+  port: 33019
+  server: node-cn-gzb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 A -> 台湾S Hinet Netflix
+  network: tcp
+  port: 31135
+  server: node-cn-shh.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 台湾R Hinet Netflix
+  network: tcp
+  port: 443
+  server: node-tw-chghu.kyvip.pw
+  servername: node-tw-chghu.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-tw-chghu.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM B -> 台湾R Hinet Netflix
+  network: tcp
+  port: 33020
+  server: node-cn-gzb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 A -> 台湾R Hinet Netflix
+  network: tcp
+  port: 31136
+  server: node-cn-shh.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 香港1 HKT TVB Netflix HBO
+  network: tcp
+  port: 443
+  server: node-hkg-phhkt.kyvip.pw
+  servername: node-hkg-phhkt.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-hkg-phhkt.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM A -> 香港1 HKT TVB Netflix HBO
+  network: tcp
+  port: 33000
+  server: node-cn-gz.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 A -> 香港1 HKT TVB Netflix HBO
+  network: tcp
+  port: 31100
+  server: node-cn-shh.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 香港8 HKT TVB Netflix HBO
+  network: tcp
+  port: 443
+  server: node-hkg-ph8.kyvip.pw
+  servername: node-hkg-ph8.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-hkg-ph8.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM A -> 香港8 HKT TVB Netflix HBO
+  network: tcp
+  port: 33003
+  server: node-cn-gz.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 A -> 香港8 HKT TVB Netflix HBO
+  network: tcp
+  port: 31103
+  server: node-cn-shh.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 香港9 HKT TVB Netflix HBO
+  network: tcp
+  port: 443
+  server: node-hkg-ph9.kyvip.pw
+  servername: node-hkg-ph9.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-hkg-ph9.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM A -> 香港9 HKT TVB Netflix HBO
+  network: tcp
+  port: 33004
+  server: node-cn-gz.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 A -> 香港9 HKT TVB Netflix HBO
+  network: tcp
+  port: 31104
+  server: node-cn-shh.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 香港10 HKBN TVB Netflix HBO
+  network: tcp
+  port: 443
+  server: node-hkg-phhkbn.kyvip.pw
+  servername: node-hkg-phhkbn.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-hkg-phhkbn.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM A -> 香港10 HKBN TVB Netflix HBO
+  network: tcp
+  port: 33005
+  server: node-cn-gz.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 A -> 香港10 HKBN TVB Netflix HBO
+  network: tcp
+  port: 31105
+  server: node-cn-shh.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 香港11 HKT TVB Netflix HBO
+  network: tcp
+  port: 443
+  server: node-hkg-ph11.kyvip.pw
+  servername: node-hkg-ph11.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-hkg-ph11.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM A -> 香港11 HKT TVB Netflix HBO
+  network: tcp
+  port: 33006
+  server: node-cn-gz.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 A -> 香港11 HKT TVB Netflix HBO
+  network: tcp
+  port: 31106
+  server: node-cn-shh.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 香港12 HGC TVB Netflix HBO
+  network: tcp
+  port: 443
+  server: node-hkg-phhgcsec.kyvip.pw
+  servername: node-hkg-phhgcsec.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-hkg-phhgcsec.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM A -> 香港12 HGC TVB Netflix HBO
+  network: tcp
+  port: 33007
+  server: node-cn-gz.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 A -> 香港12 HGC TVB Netflix HBO
+  network: tcp
+  port: 31107
+  server: node-cn-shh.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 香港13 HKT TVB Netflix HBO
+  network: tcp
+  port: 443
+  server: node-hkg-ph13.kyvip.pw
+  servername: node-hkg-ph13.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-hkg-ph13.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM A -> 香港13 HKT TVB Netflix HBO
+  network: tcp
+  port: 33008
+  server: node-cn-gz.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 A -> 香港13 HKT TVB Netflix HBO
+  network: tcp
+  port: 31108
+  server: node-cn-shh.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 香港15 HKT TVB Netflix HBO
+  network: tcp
+  port: 443
+  server: node-hkg-ph15.kyvip.pw
+  servername: node-hkg-ph15.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-hkg-ph15.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM A -> 香港15 HKT TVB Netflix HBO
+  network: tcp
+  port: 33009
+  server: node-cn-gz.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 A -> 香港15 HKT TVB Netflix HBO
+  network: tcp
+  port: 31109
+  server: node-cn-shh.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 香港16 HKT TVB Netflix HBO
+  network: tcp
+  port: 443
+  server: node-hkg-ph16.kyvip.pw
+  servername: node-hkg-ph16.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-hkg-ph16.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM A -> 香港16 HKT TVB Netflix HBO
+  network: tcp
+  port: 33023
+  server: node-cn-gz.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 A -> 香港16 HKT TVB Netflix HBO
+  network: tcp
+  port: 31159
+  server: node-cn-shh.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 香港17 HKT TVB Netflix HBO
+  network: tcp
+  port: 443
+  server: node-hkg-ph17.kyvip.pw
+  servername: node-hkg-ph17.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-hkg-ph17.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM A -> 香港17 HKT TVB Netflix HBO
+  network: tcp
+  port: 33010
+  server: node-cn-gz.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 A -> 香港17 HKT TVB Netflix HBO
+  network: tcp
+  port: 31111
+  server: node-cn-shh.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 香港19 Azure
+  network: tcp
+  port: 443
+  server: node-hkg-az.kyvip.pw
+  servername: node-hkg-az.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-hkg-az.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM A -> 香港19 Azure
+  network: tcp
+  port: 33011
+  server: node-cn-gz.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 A -> 香港19 Azure
+  network: tcp
+  port: 31112
+  server: node-cn-shh.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 香港20 HKT TVB Netflix HBO
+  network: tcp
+  port: 443
+  server: node-hkg-ph20.kyvip.pw
+  servername: node-hkg-ph20.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-hkg-ph20.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM A -> 香港20 HKT TVB Netflix HBO
+  network: tcp
+  port: 33012
+  server: node-cn-gz.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 A -> 香港20 HKT TVB Netflix HBO
+  network: tcp
+  port: 31113
+  server: node-cn-shh.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 香港22 HKT TVB Netflix HBO
+  network: tcp
+  port: 443
+  server: node-hkg-ph22.kyvip.pw
+  servername: node-hkg-ph22.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-hkg-ph22.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM A -> 香港22 HKT TVB Netflix HBO
+  network: tcp
+  port: 33014
+  server: node-cn-gz.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 A -> 香港22 HKT TVB Netflix HBO
+  network: tcp
+  port: 31150
+  server: node-cn-shh.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 香港23 HKT TVB Netflix HBO
+  network: tcp
+  port: 443
+  server: node-hkg-ph23.kyvip.pw
+  servername: node-hkg-ph23.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-hkg-ph23.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM A -> 香港23 HKT TVB Netflix HBO
+  network: tcp
+  port: 33015
+  server: node-cn-gz.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 A -> 香港23 HKT TVB Netflix HBO
+  network: tcp
+  port: 31151
+  server: node-cn-shh.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 香港25 HKT TVB Netflix HBO
+  network: tcp
+  port: 443
+  server: node-hkg-ph25.kyvip.pw
+  servername: node-hkg-ph25.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-hkg-ph25.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM A -> 香港25 HKT TVB Netflix HBO
+  network: tcp
+  port: 33016
+  server: node-cn-gz.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 A -> 香港25 HKT TVB Netflix HBO
+  network: tcp
+  port: 31152
+  server: node-cn-shh.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 香港27 HKBN TVB Netflix HBO
+  network: tcp
+  port: 443
+  server: node-hkg-phhkbnsc.kyvip.pw
+  servername: node-hkg-phhkbnsc.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-hkg-phhkbnsc.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM A -> 香港27 HKBN TVB Netflix HBO
+  network: tcp
+  port: 33017
+  server: node-cn-gz.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 A -> 香港27 HKBN TVB Netflix HBO
+  network: tcp
+  port: 31115
+  server: node-cn-shh.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-韩国1
+  network: tcp
+  port: 35034
+  server: node-cn-t2-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-韩国2
+  network: tcp
+  port: 35035
+  server: node-cn-t2-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-台湾1
+  network: tcp
+  port: 35030
+  server: node-cn-t2-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-台湾2
+  network: tcp
+  port: 35031
+  server: node-cn-t2-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-台湾3
+  network: tcp
+  port: 35032
+  server: node-cn-t2-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-香港1
+  network: tcp
+  port: 35010
+  server: node-cnhk-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-香港2
+  network: tcp
+  port: 35011
+  server: node-cnhk-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-香港3
+  network: tcp
+  port: 35012
+  server: node-cnhk-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-香港4
+  network: tcp
+  port: 35013
+  server: node-cnhk-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-香港5
+  network: tcp
+  port: 35014
+  server: node-cnhk-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-香港6
+  network: tcp
+  port: 35015
+  server: node-cnhk-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-香港7
+  network: tcp
+  port: 35016
+  server: node-cnhk-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-香港8
+  network: tcp
+  port: 35017
+  server: node-cnhk-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-香港9
+  network: tcp
+  port: 35018
+  server: node-cnhk-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-香港10
+  network: tcp
+  port: 35019
+  server: node-cnhk-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-香港11
+  network: tcp
+  port: 35020
+  server: node-cnhk-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-香港12
+  network: tcp
+  port: 35021
+  server: node-cnhk-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-香港13
+  network: tcp
+  port: 35022
+  server: node-cnhk-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-香港14
+  network: tcp
+  port: 35023
+  server: node-cnhk-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-香港15
+  network: tcp
+  port: 35024
+  server: node-cnhk-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-香港16
+  network: tcp
+  port: 35025
+  server: node-cnhk-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-日本1
+  network: tcp
+  port: 35010
+  server: node-cn-1-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-日本2
+  network: tcp
+  port: 35011
+  server: node-cn-1-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-日本3
+  network: tcp
+  port: 35012
+  server: node-cn-1-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-日本4
+  network: tcp
+  port: 35013
+  server: node-cn-1-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-日本5
+  network: tcp
+  port: 35014
+  server: node-cn-1-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-日本6
+  network: tcp
+  port: 35015
+  server: node-cn-1-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-日本7
+  network: tcp
+  port: 35016
+  server: node-cn-1-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-日本8
+  network: tcp
+  port: 35017
+  server: node-cn-1-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-日本9
+  network: tcp
+  port: 35018
+  server: node-cn-1-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-日本10
+  network: tcp
+  port: 35019
+  server: node-cn-1-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-美国1
+  network: tcp
+  port: 35050
+  server: node-cn-1-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-美国2
+  network: tcp
+  port: 35051
+  server: node-cn-1-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-美国3
+  network: tcp
+  port: 35052
+  server: node-cn-1-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-美国4
+  network: tcp
+  port: 35053
+  server: node-cn-1-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-美国5
+  network: tcp
+  port: 35054
+  server: node-cn-1-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-美国6
+  network: tcp
+  port: 35055
+  server: node-cn-t2-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-美国7
+  network: tcp
+  port: 35056
+  server: node-cn-t2-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-美国8
+  network: tcp
+  port: 35057
+  server: node-cn-t2-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-美国9
+  network: tcp
+  port: 35058
+  server: node-cn-t2-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: IEPL-美国10
+  network: tcp
+  port: 35059
+  server: node-cn-t2-iepl.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 美国1 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 443
+  server: node-us-ncp.kyvip.pw
+  servername: node-us-ncp.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-us-ncp.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM B -> 美国1 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 31500
+  server: node-cn-gzb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 B -> 美国1 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 31300
+  server: node-cn-shhb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 美国2 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 443
+  server: node-us-los.kyvip.pw
+  servername: node-us-los.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-us-los.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM B -> 美国2 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 31501
+  server: node-cn-gzb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 B -> 美国2 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 31301
+  server: node-cn-shhb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 美国3 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 443
+  server: node-us-hu.kyvip.pw
+  servername: node-us-hu.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-us-hu.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM B -> 美国3 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 31502
+  server: node-cn-gzb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 B -> 美国3 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 31302
+  server: node-cn-shhb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 美国4 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 443
+  server: node-us-rg.kyvip.pw
+  servername: node-us-rg.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-us-rg.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM B -> 美国4 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 31503
+  server: node-cn-gzb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 B -> 美国4 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 31303
+  server: node-cn-shhb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 美国5 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 443
+  server: node-usa-lax.kyvip.pw
+  servername: node-usa-lax.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-usa-lax.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM B -> 美国5 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 31504
+  server: node-cn-gzb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 B -> 美国5 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 31304
+  server: node-cn-shhb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 美国6 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 443
+  server: node-us-lax.kyvip.pw
+  servername: node-us-lax.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-us-lax.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM B -> 美国6 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 31505
+  server: node-cn-gzb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 B -> 美国6 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 31305
+  server: node-cn-shhb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 美国7 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 443
+  server: node-us-nf.kyvip.pw
+  servername: node-us-nf.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-us-nf.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM B -> 美国7 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 31506
+  server: node-cn-gzb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 B -> 美国7 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 31306
+  server: node-cn-shhb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 美国8 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 443
+  server: node-us-gb.kyvip.pw
+  servername: node-us-gb.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-us-gb.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM B -> 美国8 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 31507
+  server: node-cn-gzb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 B -> 美国8 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 31307
+  server: node-cn-shhb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 美国9 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 443
+  server: node-us-laxdc.kyvip.pw
+  servername: node-us-laxdc.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-us-laxdc.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM B -> 美国9 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 31508
+  server: node-cn-gzb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 B -> 美国9 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 31308
+  server: node-cn-shhb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 美国10 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 443
+  server: node-us-rg2.kyvip.pw
+  servername: node-us-rg2.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-us-rg2.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM B -> 美国10 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 31509
+  server: node-cn-gzb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 B -> 美国10 GIA CN2 Netflix hulu HBO
+  network: tcp
+  port: 31309
+  server: node-cn-shhb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 新加坡1
+  network: tcp
+  port: 443
+  server: node-sg-as.kyvip.pw
+  servername: node-sg-as.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-sg-as.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM B -> 新加坡1
+  network: tcp
+  port: 33140
+  server: node-cn-gzb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 B -> 新加坡1
+  network: tcp
+  port: 31241
+  server: node-cn-shhb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 新加坡2
+  network: tcp
+  port: 443
+  server: node-sg-al1.kyvip.pw
+  servername: node-sg-al1.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-sg-al1.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM B -> 新加坡2
+  network: tcp
+  port: 33141
+  server: node-cn-gzb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 B -> 新加坡2
+  network: tcp
+  port: 31242
+  server: node-cn-shhb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 日本1 Netflix AbemaTV happyon
+  network: tcp
+  port: 443
+  server: node-jp-on.kyvip.pw
+  servername: node-jp-on.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-jp-on.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM B -> 日本1 Netflix AbemaTV happyon
+  network: tcp
+  port: 33124
+  server: node-cn-gzb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 B -> 日本1 Netflix AbemaTV happyon
+  network: tcp
+  port: 31227
+  server: node-cn-shhb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 日本4 GMO Netflix AbemaTV happyon
+  network: tcp
+  port: 443
+  server: note-jp-ka.kyvip.pw
+  servername: note-jp-ka.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: note-jp-ka.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM B -> 日本4 GMO Netflix AbemaTV happyon
+  network: tcp
+  port: 33127
+  server: node-cn-gzb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 B -> 日本4 GMO Netflix AbemaTV happyon
+  network: tcp
+  port: 31230
+  server: node-cn-shhb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 日本5 GMO Netflix
+  network: tcp
+  port: 443
+  server: note-tokyo-gmo.kyvip.pw
+  servername: note-tokyo-gmo.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: note-tokyo-gmo.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM B -> 日本5 GMO Netflix
+  network: tcp
+  port: 33128
+  server: node-cn-gzb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 B -> 日本5 GMO Netflix
+  network: tcp
+  port: 31231
+  server: node-cn-shhb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 日本6 IDCF
+  network: tcp
+  port: 443
+  server: node-jp-cloud-1.kyvip.pw
+  servername: node-jp-cloud-1.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-jp-cloud-1.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM B -> 日本6 IDCF
+  network: tcp
+  port: 33129
+  server: node-cn-gzb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 B -> 日本6 IDCF
+  network: tcp
+  port: 31232
+  server: node-cn-shhb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 日本7
+  network: tcp
+  port: 443
+  server: note-jp-tokyo.kyvip.pw
+  servername: note-jp-tokyo.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: note-jp-tokyo.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM B -> 日本7
+  network: tcp
+  port: 33130
+  server: node-cn-gzb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 B -> 日本7
+  network: tcp
+  port: 31233
+  server: node-cn-shhb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 日本9
+  network: tcp
+  port: 443
+  server: node-jp-awtokyo.kyvip.pw
+  servername: node-jp-awtokyo.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-jp-awtokyo.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM B -> 日本9
+  network: tcp
+  port: 33132
+  server: node-cn-gzb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 B -> 日本9
+  network: tcp
+  port: 31235
+  server: node-cn-shhb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 日本10 IDCF
+  network: tcp
+  port: 443
+  server: node-jp-cloud-2.kyvip.pw
+  servername: node-jp-cloud-2.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-jp-cloud-2.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM B -> 日本10 IDCF
+  network: tcp
+  port: 33133
+  server: node-cn-gzb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 B -> 日本10 IDCF
+  network: tcp
+  port: 31236
+  server: node-cn-shhb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 日本11 IDCF Netflix AbemaTV happyon
+  network: tcp
+  port: 443
+  server: node-jp-cloud-3.kyvip.pw
+  servername: node-jp-cloud-3.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-jp-cloud-3.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM B -> 日本11 IDCF Netflix AbemaTV happyon
+  network: tcp
+  port: 33134
+  server: node-cn-gzb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 B -> 日本11 IDCF Netflix AbemaTV happyon
+  network: tcp
+  port: 31237
+  server: node-cn-shhb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 日本13 KDDI
+  network: tcp
+  port: 30000
+  server: node-jp.kddi.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 广州CM B -> 日本13 KDDI
+  network: tcp
+  port: 33136
+  server: node-cn-gzb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 B -> 日本13 KDDI
+  network: tcp
+  port: 31238
+  server: node-cn-shhb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: none
+  name: 日本15 Sakura
+  network: tcp
+  port: 443
+  server: node-jp-sakura.kyvip.pw
+  servername: node-jp-sakura.kyvip.pw
+  tls: true
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+  ws-headers:
+    Host: node-jp-sakura.kyvip.pw
+- alterId: 0
+  cipher: auto
+  name: 广州CM B -> 日本15 Sakura
+  network: tcp
+  port: 33137
+  server: node-cn-gzb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alterId: 0
+  cipher: auto
+  name: 上海CN2 B -> 日本15 Sakura
+  network: tcp
+  port: 31239
+  server: node-cn-shhb.kyvip.pw
+  type: vmess
+  uuid: DE5B5F2B-69F2-87E9-9CA7-1FBA57A4DB2A
+- alpn:
+  - h2
+  name: 美国-bandwagon-trojan
+  password: aa894653
+  port: 8443
+  server: us.my-vps.ml
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: none
+  http - opts:
+    path:
+    - /vmess-http
+  name: 美国-bandwagon-vmess
+  network: http
+  port: 443
+  server: us.my-vps.ml
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d4ca5829-9087-4ff2-adf4-a0c1b3a3a27c
+proxy-groups:
+- name: proxy
+  proxies:
+  - 香港
+  - 台湾
+  - 日本
+  - 美国
+  - 韩国
+  - 新加坡
+  - 英国
+  - 俄罗斯
+  - 回国
+  - 美国-bandwagon-直连
+  - DIRECT
+  - REJECT
+  type: select
+- name: 香港
+  proxies:
+  - 香港-IEPL
+  - 香港-上海CN2
+  - 香港-广州CM
+  - 香港-直连
+  type: select
+- name: 台湾
+  proxies:
+  - 台湾-IEPL
+  - 台湾-上海CN2
+  - 台湾-广州CM
+  - 台湾-直连
+  type: select
+- name: 日本
+  proxies:
+  - 日本-IEPL
+  - 日本-上海CN2
+  - 日本-广州CM
+  - 日本-直连
+  type: select
+- name: 美国
+  proxies:
+  - 美国-IEPL
+  - 美国-上海CN2
+  - 美国-广州CM
+  - 美国-直连
+  type: select
+- name: 韩国
+  proxies:
+  - 韩国-IEPL
+  - 韩国-上海CN2
+  - 韩国-广州CM
+  - 韩国-直连
+  type: select
+- name: 新加坡
+  proxies:
+  - 新加坡-上海CN2
+  - 新加坡-广州CM
+  - 新加坡-直连
+  type: select
+- name: 英国
+  proxies:
+  - 英国-直连
+  type: select
+- name: 俄罗斯
+  proxies:
+  - 俄罗斯-直连
+  type: select
+- name: 回国
+  proxies:
+  - 回国-直连
+  type: select
+- name: Microsoft
+  proxies:
+  - proxy
+  - DIRECT
+  type: select
+- name: Apple
+  proxies:
+  - 香港
+  - 美国
+  - DIRECT
+  type: select
+- name: Netflix
+  proxies:
+  - Netflix-香港-上海CN2
+  - Netflix-香港-广州CM
+  - Netflix-香港-直连
+  - Netflix-台湾-上海CN2
+  - Netflix-台湾-广州CM
+  - Netflix-台湾-直连
+  - Netflix-日本-上海CN2
+  - Netflix-日本-广州CM
+  - Netflix-日本-直连
+  - Netflix-美国-上海CN2
+  - Netflix-美国-广州CM
+  - Netflix-美国-直连
+  - Netflix-韩国-上海CN2
+  - Netflix-韩国-广州CM
+  - Netflix-韩国-直连
+  - Netflix-英国-直连
+  type: select
+- name: HBO
+  proxies:
+  - HBO-香港-上海CN2
+  - HBO-香港-广州CM
+  - HBO-香港-直连
+  - HBO-美国-上海CN2
+  - HBO-美国-广州CM
+  - HBO-美国-直连
+  type: select
+- name: hulu
+  proxies:
+  - hulu-美国-上海CN2
+  - hulu-美国-广州CM
+  - hulu-美国-直连
+  type: select
+- name: AbemaTV
+  proxies:
+  - AbemaTV-日本-上海CN2
+  - AbemaTV-日本-广州CM
+  - AbemaTV-日本-直连
+  type: select
+- name: happyon
+  proxies:
+  - happyon-日本-上海CN2
+  - happyon-日本-广州CM
+  - happyon-日本-直连
+  type: select
+- name: BBC
+  proxies:
+  - BBC-英国-直连
+  type: select
+- interval: 1000
+  name: 香港-IEPL
+  proxies:
+  - IEPL-香港1
+  - IEPL-香港10
+  - IEPL-香港11
+  - IEPL-香港12
+  - IEPL-香港13
+  - IEPL-香港14
+  - IEPL-香港15
+  - IEPL-香港16
+  - IEPL-香港2
+  - IEPL-香港3
+  - IEPL-香港4
+  - IEPL-香港5
+  - IEPL-香港6
+  - IEPL-香港7
+  - IEPL-香港8
+  - IEPL-香港9
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: 香港-上海CN2
+  proxies:
+  - 上海CN2 A -> 香港1 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港10 HKBN TVB Netflix HBO
+  - 上海CN2 A -> 香港11 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港12 HGC TVB Netflix HBO
+  - 上海CN2 A -> 香港13 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港15 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港16 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港17 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港19 Azure
+  - 上海CN2 A -> 香港20 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港22 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港23 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港25 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港27 HKBN TVB Netflix HBO
+  - 上海CN2 A -> 香港8 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港9 HKT TVB Netflix HBO
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: 香港-广州CM
+  proxies:
+  - 广州CM A -> 香港1 HKT TVB Netflix HBO
+  - 广州CM A -> 香港10 HKBN TVB Netflix HBO
+  - 广州CM A -> 香港11 HKT TVB Netflix HBO
+  - 广州CM A -> 香港12 HGC TVB Netflix HBO
+  - 广州CM A -> 香港13 HKT TVB Netflix HBO
+  - 广州CM A -> 香港15 HKT TVB Netflix HBO
+  - 广州CM A -> 香港16 HKT TVB Netflix HBO
+  - 广州CM A -> 香港17 HKT TVB Netflix HBO
+  - 广州CM A -> 香港19 Azure
+  - 广州CM A -> 香港20 HKT TVB Netflix HBO
+  - 广州CM A -> 香港22 HKT TVB Netflix HBO
+  - 广州CM A -> 香港23 HKT TVB Netflix HBO
+  - 广州CM A -> 香港25 HKT TVB Netflix HBO
+  - 广州CM A -> 香港27 HKBN TVB Netflix HBO
+  - 广州CM A -> 香港8 HKT TVB Netflix HBO
+  - 广州CM A -> 香港9 HKT TVB Netflix HBO
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: 香港-直连
+  proxies:
+  - 香港1 HKT TVB Netflix HBO
+  - 香港10 HKBN TVB Netflix HBO
+  - 香港11 HKT TVB Netflix HBO
+  - 香港12 HGC TVB Netflix HBO
+  - 香港13 HKT TVB Netflix HBO
+  - 香港15 HKT TVB Netflix HBO
+  - 香港16 HKT TVB Netflix HBO
+  - 香港17 HKT TVB Netflix HBO
+  - 香港19 Azure
+  - 香港20 HKT TVB Netflix HBO
+  - 香港22 HKT TVB Netflix HBO
+  - 香港23 HKT TVB Netflix HBO
+  - 香港25 HKT TVB Netflix HBO
+  - 香港27 HKBN TVB Netflix HBO
+  - 香港8 HKT TVB Netflix HBO
+  - 香港9 HKT TVB Netflix HBO
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: 台湾-IEPL
+  proxies:
+  - IEPL-台湾1
+  - IEPL-台湾2
+  - IEPL-台湾3
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: 台湾-上海CN2
+  proxies:
+  - 上海CN2 A -> 台湾N Hinet Netflix
+  - 上海CN2 A -> 台湾R Hinet Netflix
+  - 上海CN2 A -> 台湾S Hinet Netflix
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: 台湾-广州CM
+  proxies:
+  - 广州CM B -> 台湾N Hinet Netflix
+  - 广州CM B -> 台湾R Hinet Netflix
+  - 广州CM B -> 台湾S Hinet Netflix
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: 台湾-直连
+  proxies:
+  - 台湾N Hinet Netflix
+  - 台湾R Hinet Netflix
+  - 台湾S Hinet Netflix
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: 日本-IEPL
+  proxies:
+  - IEPL-日本1
+  - IEPL-日本10
+  - IEPL-日本2
+  - IEPL-日本3
+  - IEPL-日本4
+  - IEPL-日本5
+  - IEPL-日本6
+  - IEPL-日本7
+  - IEPL-日本8
+  - IEPL-日本9
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: 日本-上海CN2
+  proxies:
+  - 上海CN2 B -> 日本1 Netflix AbemaTV happyon
+  - 上海CN2 B -> 日本10 IDCF
+  - 上海CN2 B -> 日本11 IDCF Netflix AbemaTV happyon
+  - 上海CN2 B -> 日本13 KDDI
+  - 上海CN2 B -> 日本15 Sakura
+  - 上海CN2 B -> 日本4 GMO Netflix AbemaTV happyon
+  - 上海CN2 B -> 日本5 GMO Netflix
+  - 上海CN2 B -> 日本6 IDCF
+  - 上海CN2 B -> 日本7
+  - 上海CN2 B -> 日本9
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: 日本-广州CM
+  proxies:
+  - 广州CM B -> 日本1 Netflix AbemaTV happyon
+  - 广州CM B -> 日本10 IDCF
+  - 广州CM B -> 日本11 IDCF Netflix AbemaTV happyon
+  - 广州CM B -> 日本13 KDDI
+  - 广州CM B -> 日本15 Sakura
+  - 广州CM B -> 日本4 GMO Netflix AbemaTV happyon
+  - 广州CM B -> 日本5 GMO Netflix
+  - 广州CM B -> 日本6 IDCF
+  - 广州CM B -> 日本7
+  - 广州CM B -> 日本9
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: 日本-直连
+  proxies:
+  - 日本1 Netflix AbemaTV happyon
+  - 日本10 IDCF
+  - 日本11 IDCF Netflix AbemaTV happyon
+  - 日本13 KDDI
+  - 日本15 Sakura
+  - 日本4 GMO Netflix AbemaTV happyon
+  - 日本5 GMO Netflix
+  - 日本6 IDCF
+  - 日本7
+  - 日本9
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: 美国-IEPL
+  proxies:
+  - IEPL-美国1
+  - IEPL-美国10
+  - IEPL-美国2
+  - IEPL-美国3
+  - IEPL-美国4
+  - IEPL-美国5
+  - IEPL-美国6
+  - IEPL-美国7
+  - IEPL-美国8
+  - IEPL-美国9
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: 美国-上海CN2
+  proxies:
+  - 上海CN2 B -> 美国1 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国10 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国2 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国3 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国4 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国5 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国6 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国7 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国8 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国9 GIA CN2 Netflix hulu HBO
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: 美国-广州CM
+  proxies:
+  - 广州CM B -> 美国1 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国10 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国2 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国3 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国4 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国5 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国6 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国7 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国8 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国9 GIA CN2 Netflix hulu HBO
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: 美国-直连
+  proxies:
+  - 美国1 GIA CN2 Netflix hulu HBO
+  - 美国10 GIA CN2 Netflix hulu HBO
+  - 美国2 GIA CN2 Netflix hulu HBO
+  - 美国3 GIA CN2 Netflix hulu HBO
+  - 美国4 GIA CN2 Netflix hulu HBO
+  - 美国5 GIA CN2 Netflix hulu HBO
+  - 美国6 GIA CN2 Netflix hulu HBO
+  - 美国7 GIA CN2 Netflix hulu HBO
+  - 美国8 GIA CN2 Netflix hulu HBO
+  - 美国9 GIA CN2 Netflix hulu HBO
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: 韩国-IEPL
+  proxies:
+  - IEPL-韩国1
+  - IEPL-韩国2
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: 韩国-上海CN2
+  proxies:
+  - 上海CN2 A -> 韩国1 Netflix
+  - 上海CN2 A -> 韩国2 Netflix
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: 韩国-广州CM
+  proxies:
+  - 广州CM B -> 韩国1 Netflix
+  - 广州CM B -> 韩国2 Netflix
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: 韩国-直连
+  proxies:
+  - 韩国1 Netflix
+  - 韩国2 Netflix
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: 新加坡-上海CN2
+  proxies:
+  - 上海CN2 B -> 新加坡1
+  - 上海CN2 B -> 新加坡2
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: 新加坡-广州CM
+  proxies:
+  - 广州CM B -> 新加坡1
+  - 广州CM B -> 新加坡2
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: 新加坡-直连
+  proxies:
+  - 新加坡1
+  - 新加坡2
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: 英国-直连
+  proxies:
+  - 英国 Netflix BBC ITV C4 F4
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: 俄罗斯-直连
+  proxies:
+  - 俄罗斯伯力1
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: 回国-直连
+  proxies:
+  - 回国线路
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: 美国-bandwagon-直连
+  proxies:
+  - 美国-bandwagon-trojan
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: Netflix-香港-上海CN2
+  proxies:
+  - 上海CN2 A -> 香港1 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港10 HKBN TVB Netflix HBO
+  - 上海CN2 A -> 香港11 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港12 HGC TVB Netflix HBO
+  - 上海CN2 A -> 香港13 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港15 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港16 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港17 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港20 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港22 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港23 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港25 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港27 HKBN TVB Netflix HBO
+  - 上海CN2 A -> 香港8 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港9 HKT TVB Netflix HBO
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: Netflix-香港-广州CM
+  proxies:
+  - 广州CM A -> 香港1 HKT TVB Netflix HBO
+  - 广州CM A -> 香港10 HKBN TVB Netflix HBO
+  - 广州CM A -> 香港11 HKT TVB Netflix HBO
+  - 广州CM A -> 香港12 HGC TVB Netflix HBO
+  - 广州CM A -> 香港13 HKT TVB Netflix HBO
+  - 广州CM A -> 香港15 HKT TVB Netflix HBO
+  - 广州CM A -> 香港16 HKT TVB Netflix HBO
+  - 广州CM A -> 香港17 HKT TVB Netflix HBO
+  - 广州CM A -> 香港20 HKT TVB Netflix HBO
+  - 广州CM A -> 香港22 HKT TVB Netflix HBO
+  - 广州CM A -> 香港23 HKT TVB Netflix HBO
+  - 广州CM A -> 香港25 HKT TVB Netflix HBO
+  - 广州CM A -> 香港27 HKBN TVB Netflix HBO
+  - 广州CM A -> 香港8 HKT TVB Netflix HBO
+  - 广州CM A -> 香港9 HKT TVB Netflix HBO
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: Netflix-香港-直连
+  proxies:
+  - 香港1 HKT TVB Netflix HBO
+  - 香港10 HKBN TVB Netflix HBO
+  - 香港11 HKT TVB Netflix HBO
+  - 香港12 HGC TVB Netflix HBO
+  - 香港13 HKT TVB Netflix HBO
+  - 香港15 HKT TVB Netflix HBO
+  - 香港16 HKT TVB Netflix HBO
+  - 香港17 HKT TVB Netflix HBO
+  - 香港20 HKT TVB Netflix HBO
+  - 香港22 HKT TVB Netflix HBO
+  - 香港23 HKT TVB Netflix HBO
+  - 香港25 HKT TVB Netflix HBO
+  - 香港27 HKBN TVB Netflix HBO
+  - 香港8 HKT TVB Netflix HBO
+  - 香港9 HKT TVB Netflix HBO
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: Netflix-台湾-上海CN2
+  proxies:
+  - 上海CN2 A -> 台湾N Hinet Netflix
+  - 上海CN2 A -> 台湾R Hinet Netflix
+  - 上海CN2 A -> 台湾S Hinet Netflix
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: Netflix-台湾-广州CM
+  proxies:
+  - 广州CM B -> 台湾N Hinet Netflix
+  - 广州CM B -> 台湾R Hinet Netflix
+  - 广州CM B -> 台湾S Hinet Netflix
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: Netflix-台湾-直连
+  proxies:
+  - 台湾N Hinet Netflix
+  - 台湾R Hinet Netflix
+  - 台湾S Hinet Netflix
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: Netflix-日本-上海CN2
+  proxies:
+  - 上海CN2 B -> 日本1 Netflix AbemaTV happyon
+  - 上海CN2 B -> 日本11 IDCF Netflix AbemaTV happyon
+  - 上海CN2 B -> 日本4 GMO Netflix AbemaTV happyon
+  - 上海CN2 B -> 日本5 GMO Netflix
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: Netflix-日本-广州CM
+  proxies:
+  - 广州CM B -> 日本1 Netflix AbemaTV happyon
+  - 广州CM B -> 日本11 IDCF Netflix AbemaTV happyon
+  - 广州CM B -> 日本4 GMO Netflix AbemaTV happyon
+  - 广州CM B -> 日本5 GMO Netflix
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: Netflix-日本-直连
+  proxies:
+  - 日本1 Netflix AbemaTV happyon
+  - 日本11 IDCF Netflix AbemaTV happyon
+  - 日本4 GMO Netflix AbemaTV happyon
+  - 日本5 GMO Netflix
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: Netflix-美国-上海CN2
+  proxies:
+  - 上海CN2 B -> 美国1 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国10 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国2 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国3 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国4 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国5 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国6 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国7 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国8 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国9 GIA CN2 Netflix hulu HBO
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: Netflix-美国-广州CM
+  proxies:
+  - 广州CM B -> 美国1 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国10 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国2 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国3 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国4 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国5 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国6 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国7 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国8 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国9 GIA CN2 Netflix hulu HBO
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: Netflix-美国-直连
+  proxies:
+  - 美国1 GIA CN2 Netflix hulu HBO
+  - 美国10 GIA CN2 Netflix hulu HBO
+  - 美国2 GIA CN2 Netflix hulu HBO
+  - 美国3 GIA CN2 Netflix hulu HBO
+  - 美国4 GIA CN2 Netflix hulu HBO
+  - 美国5 GIA CN2 Netflix hulu HBO
+  - 美国6 GIA CN2 Netflix hulu HBO
+  - 美国7 GIA CN2 Netflix hulu HBO
+  - 美国8 GIA CN2 Netflix hulu HBO
+  - 美国9 GIA CN2 Netflix hulu HBO
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: Netflix-韩国-上海CN2
+  proxies:
+  - 上海CN2 A -> 韩国1 Netflix
+  - 上海CN2 A -> 韩国2 Netflix
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: Netflix-韩国-广州CM
+  proxies:
+  - 广州CM B -> 韩国1 Netflix
+  - 广州CM B -> 韩国2 Netflix
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: Netflix-韩国-直连
+  proxies:
+  - 韩国1 Netflix
+  - 韩国2 Netflix
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: Netflix-英国-直连
+  proxies:
+  - 英国 Netflix BBC ITV C4 F4
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: HBO-香港-上海CN2
+  proxies:
+  - 上海CN2 A -> 香港1 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港10 HKBN TVB Netflix HBO
+  - 上海CN2 A -> 香港11 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港12 HGC TVB Netflix HBO
+  - 上海CN2 A -> 香港13 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港15 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港16 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港17 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港20 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港22 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港23 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港25 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港27 HKBN TVB Netflix HBO
+  - 上海CN2 A -> 香港8 HKT TVB Netflix HBO
+  - 上海CN2 A -> 香港9 HKT TVB Netflix HBO
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: HBO-香港-广州CM
+  proxies:
+  - 广州CM A -> 香港1 HKT TVB Netflix HBO
+  - 广州CM A -> 香港10 HKBN TVB Netflix HBO
+  - 广州CM A -> 香港11 HKT TVB Netflix HBO
+  - 广州CM A -> 香港12 HGC TVB Netflix HBO
+  - 广州CM A -> 香港13 HKT TVB Netflix HBO
+  - 广州CM A -> 香港15 HKT TVB Netflix HBO
+  - 广州CM A -> 香港16 HKT TVB Netflix HBO
+  - 广州CM A -> 香港17 HKT TVB Netflix HBO
+  - 广州CM A -> 香港20 HKT TVB Netflix HBO
+  - 广州CM A -> 香港22 HKT TVB Netflix HBO
+  - 广州CM A -> 香港23 HKT TVB Netflix HBO
+  - 广州CM A -> 香港25 HKT TVB Netflix HBO
+  - 广州CM A -> 香港27 HKBN TVB Netflix HBO
+  - 广州CM A -> 香港8 HKT TVB Netflix HBO
+  - 广州CM A -> 香港9 HKT TVB Netflix HBO
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: HBO-香港-直连
+  proxies:
+  - 香港1 HKT TVB Netflix HBO
+  - 香港10 HKBN TVB Netflix HBO
+  - 香港11 HKT TVB Netflix HBO
+  - 香港12 HGC TVB Netflix HBO
+  - 香港13 HKT TVB Netflix HBO
+  - 香港15 HKT TVB Netflix HBO
+  - 香港16 HKT TVB Netflix HBO
+  - 香港17 HKT TVB Netflix HBO
+  - 香港20 HKT TVB Netflix HBO
+  - 香港22 HKT TVB Netflix HBO
+  - 香港23 HKT TVB Netflix HBO
+  - 香港25 HKT TVB Netflix HBO
+  - 香港27 HKBN TVB Netflix HBO
+  - 香港8 HKT TVB Netflix HBO
+  - 香港9 HKT TVB Netflix HBO
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: HBO-美国-上海CN2
+  proxies:
+  - 上海CN2 B -> 美国1 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国10 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国2 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国3 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国4 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国5 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国6 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国7 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国8 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国9 GIA CN2 Netflix hulu HBO
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: HBO-美国-广州CM
+  proxies:
+  - 广州CM B -> 美国1 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国10 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国2 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国3 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国4 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国5 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国6 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国7 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国8 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国9 GIA CN2 Netflix hulu HBO
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: HBO-美国-直连
+  proxies:
+  - 美国1 GIA CN2 Netflix hulu HBO
+  - 美国10 GIA CN2 Netflix hulu HBO
+  - 美国2 GIA CN2 Netflix hulu HBO
+  - 美国3 GIA CN2 Netflix hulu HBO
+  - 美国4 GIA CN2 Netflix hulu HBO
+  - 美国5 GIA CN2 Netflix hulu HBO
+  - 美国6 GIA CN2 Netflix hulu HBO
+  - 美国7 GIA CN2 Netflix hulu HBO
+  - 美国8 GIA CN2 Netflix hulu HBO
+  - 美国9 GIA CN2 Netflix hulu HBO
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: hulu-美国-上海CN2
+  proxies:
+  - 上海CN2 B -> 美国1 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国10 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国2 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国3 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国4 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国5 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国6 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国7 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国8 GIA CN2 Netflix hulu HBO
+  - 上海CN2 B -> 美国9 GIA CN2 Netflix hulu HBO
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: hulu-美国-广州CM
+  proxies:
+  - 广州CM B -> 美国1 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国10 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国2 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国3 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国4 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国5 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国6 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国7 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国8 GIA CN2 Netflix hulu HBO
+  - 广州CM B -> 美国9 GIA CN2 Netflix hulu HBO
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: hulu-美国-直连
+  proxies:
+  - 美国1 GIA CN2 Netflix hulu HBO
+  - 美国10 GIA CN2 Netflix hulu HBO
+  - 美国2 GIA CN2 Netflix hulu HBO
+  - 美国3 GIA CN2 Netflix hulu HBO
+  - 美国4 GIA CN2 Netflix hulu HBO
+  - 美国5 GIA CN2 Netflix hulu HBO
+  - 美国6 GIA CN2 Netflix hulu HBO
+  - 美国7 GIA CN2 Netflix hulu HBO
+  - 美国8 GIA CN2 Netflix hulu HBO
+  - 美国9 GIA CN2 Netflix hulu HBO
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: AbemaTV-日本-上海CN2
+  proxies:
+  - 上海CN2 B -> 日本1 Netflix AbemaTV happyon
+  - 上海CN2 B -> 日本11 IDCF Netflix AbemaTV happyon
+  - 上海CN2 B -> 日本4 GMO Netflix AbemaTV happyon
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: AbemaTV-日本-广州CM
+  proxies:
+  - 广州CM B -> 日本1 Netflix AbemaTV happyon
+  - 广州CM B -> 日本11 IDCF Netflix AbemaTV happyon
+  - 广州CM B -> 日本4 GMO Netflix AbemaTV happyon
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: AbemaTV-日本-直连
+  proxies:
+  - 日本1 Netflix AbemaTV happyon
+  - 日本11 IDCF Netflix AbemaTV happyon
+  - 日本4 GMO Netflix AbemaTV happyon
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: happyon-日本-上海CN2
+  proxies:
+  - 上海CN2 B -> 日本1 Netflix AbemaTV happyon
+  - 上海CN2 B -> 日本11 IDCF Netflix AbemaTV happyon
+  - 上海CN2 B -> 日本4 GMO Netflix AbemaTV happyon
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: happyon-日本-广州CM
+  proxies:
+  - 广州CM B -> 日本1 Netflix AbemaTV happyon
+  - 广州CM B -> 日本11 IDCF Netflix AbemaTV happyon
+  - 广州CM B -> 日本4 GMO Netflix AbemaTV happyon
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: happyon-日本-直连
+  proxies:
+  - 日本1 Netflix AbemaTV happyon
+  - 日本11 IDCF Netflix AbemaTV happyon
+  - 日本4 GMO Netflix AbemaTV happyon
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+- interval: 1000
+  name: BBC-英国-直连
+  proxies:
+  - 英国 Netflix BBC ITV C4 F4
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+redir-port: 7892
+rule-providers:
+  acl4ssr-ad:
+    behavior: classical
+    interval: 3600
+    path: ./ruleset/BanAD.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/ClashConfigProvider/ACL4SSR/Clash/Providers/BanAD.yaml
+  acl4ssr-china-ip:
+    behavior: ipcidr
+    interval: 3600
+    path: ./ruleset/ChinaIp.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/ClashConfigProvider/ACL4SSR/Clash/Providers/ChinaIp.yaml
+  acl4ssr-easy-list:
+    behavior: classical
+    interval: 3600
+    path: ./ruleset/BanEasyList.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/ClashConfigProvider/ACL4SSR/Clash/Providers/BanEasyList.yaml
+  acl4ssr-easy-list-china:
+    behavior: classical
+    interval: 3600
+    path: ./ruleset/BanEasyListChina.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/ClashConfigProvider/ACL4SSR/Clash/Providers/BanEasyListChina.yaml
+  acl4ssr-gfw-list:
+    behavior: classical
+    interval: 3600
+    path: ./ruleset/ProxyGFWlist.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/ClashConfigProvider/ACL4SSR/Clash/Providers/ProxyGFWlist.yaml
+  acl4ssr-local:
+    behavior: classical
+    interval: 3600
+    path: ./ruleset/LocalAreaNetwork.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/ClashConfigProvider/ACL4SSR/Clash/Providers/LocalAreaNetwork.yaml
+  acl4ssr-microsoft:
+    behavior: classical
+    interval: 3600
+    path: ./ruleset/Microsoft.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/ClashConfigProvider/ACL4SSR/Clash/Providers/Ruleset/Microsoft.yaml
+  acl4ssr-program-ad:
+    behavior: classical
+    interval: 3600
+    path: ./ruleset/BanProgramAD.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/ClashConfigProvider/ACL4SSR/Clash/Providers/BanProgramAD.yaml
+  acl4ssr-steam-cn:
+    behavior: classical
+    interval: 3600
+    path: ./ruleset/SteamCN.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/ClashConfigProvider/ACL4SSR/Clash/Providers/Ruleset/SteamCN.yaml
+  acl4ssr-unban:
+    behavior: classical
+    interval: 3600
+    path: ./ruleset/UnBan.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/ClashConfigProvider/ACL4SSR/Clash/Providers/UnBan.yaml
+  apple:
+    behavior: domain
+    interval: 3600
+    path: ./ruleset/apple.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt
+  acl4ssr-apple:
+    behavior: classical
+    interval: 3600
+    path: ./ruleset/ACL4SSR-apple.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/ClashConfigProvider/ACL4SSR/Clash/Providers/Ruleset/Apple.yaml
+  google-cn:
+    behavior: domain
+    interval: 3600
+    path: ./ruleset/google-cn.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt
+  greatfire:
+    behavior: domain
+    interval: 3600
+    path: ./ruleset/greatfire.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt
+  icloud:
+    behavior: domain
+    interval: 3600
+    path: ./ruleset/icloud.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt
+  lhie1-abema-tv:
+    behavior: classical
+    interval: 3600
+    path: ./ruleset/Abema TV.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules/Clash/Provider/Media/Abema%20TV.yaml
+  lhie1-bbc:
+    behavior: classical
+    interval: 3600
+    path: ./ruleset/BBC iPlayer.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules/Clash/Provider/Media/BBC%20iPlayer.yaml
+  lhie1-hbo:
+    behavior: classical
+    interval: 3600
+    path: ./ruleset/HBO.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules/Clash/Provider/Media/HBO.yaml
+  lhie1-hulu:
+    behavior: classical
+    interval: 3600
+    path: ./ruleset/Hulu.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules/Clash/Provider/Media/Hulu.yaml
+  lhie1-hulu-japan:
+    behavior: classical
+    interval: 3600
+    path: ./ruleset/Hulu Japan.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules/Clash/Provider/Media/Hulu%20Japan.yaml
+  lhie1-netflix:
+    behavior: classical
+    interval: 3600
+    path: ./ruleset/Netflix.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules/Clash/Provider/Media/Netflix.yaml
+  reject:
+    behavior: domain
+    interval: 3600
+    path: ./ruleset/reject.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
+rules:
+- DOMAIN-SUFFIX,rtbasia.com,DIRECT
+- DOMAIN-SUFFIX,my-vps.ml,DIRECT
+- DOMAIN-SUFFIX,jsdelivr.net,DIRECT
+- DOMAIN-SUFFIX,e-hentai.org,美国
+- DOMAIN-SUFFIX,exhentai.org,美国
+- RULE-SET,acl4ssr-local,DIRECT,no-resolve
+- RULE-SET,acl4ssr-unban,DIRECT,no-resolve
+- RULE-SET,reject,REJECT,no-resolve
+- RULE-SET,acl4ssr-ad,REJECT,no-resolve
+- RULE-SET,acl4ssr-easy-list,REJECT,no-resolve
+- RULE-SET,acl4ssr-easy-list-china,REJECT,no-resolve
+- RULE-SET,acl4ssr-program-ad,REJECT,no-resolve
+- RULE-SET,google-cn,DIRECT,no-resolve
+- RULE-SET,apple,Apple,no-resolve
+- RULE-SET,icloud,Apple,no-resolve
+- RULE-SET,acl4ssr-apple,Apple,no-resolve
+- RULE-SET,acl4ssr-microsoft,Microsoft,no-resolve
+- RULE-SET,acl4ssr-steam-cn,DIRECT,no-resolve
+- RULE-SET,lhie1-netflix,Netflix,no-resolve
+- RULE-SET,lhie1-hbo,HBO,no-resolve
+- RULE-SET,lhie1-hulu,hulu,no-resolve
+- RULE-SET,lhie1-hulu-japan,happyon,no-resolve
+- RULE-SET,lhie1-abema-tv,AbemaTV,no-resolve
+- RULE-SET,lhie1-bbc,BBC,no-resolve
+- RULE-SET,acl4ssr-gfw-list,proxy,no-resolve
+- RULE-SET,greatfire,proxy,no-resolve
+- RULE-SET,acl4ssr-china-ip,DIRECT
+- RULE-SET,acl4ssr-local,DIRECT
+- MATCH,proxy
+socks-port: 10808
+tproxy-port: 7893
