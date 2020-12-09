@@ -1,1 +1,2 @@
-- DOMAIN-SUFFIX,config.unityads.unity3d.com
+payload:
+  - DOMAIN-SUFFIX,config.unityads.unity3d.com
