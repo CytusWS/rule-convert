@@ -1,0 +1,13 @@
+# Proxy list
+
+DOMAIN-SUFFIX,linkedin.com,PROXY
+DOMAIN-SUFFIX,licdn.com,PROXY
+DOMAIN-SUFFIX,manhuaren.com,PROXY
+
+# Direct list
+
+DOMAIN-SUFFIX,cdp.cloud.unity3d.com,DIRECT
+
+# Reject list
+
+DOMAIN-SUFFIX,config.unityads.unity3d.com,REJECT
