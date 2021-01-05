@@ -3,4 +3,4 @@ payload:
   - DOMAIN-SUFFIX,licdn.com
   - DOMAIN-SUFFIX,manhuaren.com
   - DOMAIN-SUFFIX,cdnmanhua.net,PROXY
-  - DOMAIN-SUFFIX.cdndm5.com,PROXY
+  - DOMAIN-SUFFIX,cdndm5.com,PROXY
