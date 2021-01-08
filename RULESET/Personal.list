@@ -13,3 +13,4 @@ DOMAIN-SUFFIX,cdp.cloud.unity3d.com,DIRECT
 # Reject list
 
 DOMAIN-SUFFIX,config.unityads.unity3d.com,REJECT
+DOMAIN-SUFFIX,adservice.google.cn,REJECT
