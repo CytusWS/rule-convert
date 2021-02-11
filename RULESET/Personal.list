@@ -20,7 +20,7 @@ DOMAIN-SUFFIX,cdndm5.com,PROXY
 
 # Direct list
 
-DOMAIN-SUFFIX,cdp.cloud.unity3d.com,DIRECT
+DOMAIN-SUFFIX,cloud.unity3d.com,DIRECT
 
 # Reject list
 
