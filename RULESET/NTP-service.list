@@ -1,0 +1,124 @@
+# from LM-firefly
+
+# ⏰ NTP服务
+DOMAIN-SUFFIX,time.nist.gov,NTP
+
+# openwrt提供的ntp服务
+DOMAIN-SUFFIX,0.openwrt.pool.ntp.org,NTP
+DOMAIN-SUFFIX,1.openwrt.pool.ntp.org,NTP
+DOMAIN-SUFFIX,2.openwrt.pool.ntp.org,NTP
+DOMAIN-SUFFIX,3.openwrt.pool.ntp.org,NTP
+
+# 阿里云提供的ntp服务
+DOMAIN-SUFFIX,ntp1.cloud.aliyuncs.com,NTP
+DOMAIN-SUFFIX,ntp2.cloud.aliyuncs.com,NTP
+DOMAIN-SUFFIX,ntp3.cloud.aliyuncs.com,NTP
+DOMAIN-SUFFIX,ntp4.cloud.aliyuncs.com,NTP
+DOMAIN-SUFFIX,ntp5.cloud.aliyuncs.com,NTP
+DOMAIN-SUFFIX,ntp6.cloud.aliyuncs.com,NTP
+DOMAIN-SUFFIX,ntp.cloud.aliyuncs.com,NTP
+DOMAIN-SUFFIX,ntp7.cloud.aliyuncs.com,NTP
+DOMAIN-SUFFIX,ntp8.cloud.aliyuncs.com,NTP
+DOMAIN-SUFFIX,ntp9.cloud.aliyuncs.com,NTP
+DOMAIN-SUFFIX,ntp10.cloud.aliyuncs.com,NTP
+DOMAIN-SUFFIX,ntp11.cloud.aliyuncs.com,NTP
+DOMAIN-SUFFIX,ntp12.cloud.aliyuncs.com,NTP
+DOMAIN-SUFFIX,ntp.aliyun.com,NTP
+DOMAIN-SUFFIX,ntp1.aliyun.com,NTP
+DOMAIN-SUFFIX,ntp2.aliyun.com,NTP
+DOMAIN-SUFFIX,ntp3.aliyun.com,NTP
+DOMAIN-SUFFIX,ntp4.aliyun.com,NTP
+DOMAIN-SUFFIX,ntp5.aliyun.com,NTP
+DOMAIN-SUFFIX,ntp6.aliyun.com,NTP
+DOMAIN-SUFFIX,ntp7.aliyun.com,NTP
+DOMAIN-SUFFIX,time.pool.aliyun.com,NTP
+DOMAIN-SUFFIX,time1.aliyun.com,NTP
+DOMAIN-SUFFIX,time2.aliyun.com,NTP
+DOMAIN-SUFFIX,time3.aliyun.com,NTP
+DOMAIN-SUFFIX,time4.aliyun.com,NTP
+DOMAIN-SUFFIX,time5.aliyun.com,NTP
+DOMAIN-SUFFIX,time6.aliyun.com,NTP
+DOMAIN-SUFFIX,time7.aliyun.com,NTP
+
+# 上海交通大学提供的NTP服务
+DOMAIN-SUFFIX,ntp.sjtu.edu.cn,NTP
+
+# 北京邮电大学提供的NTP服务
+DOMAIN-SUFFIX,s1a.time.edu.cn,NTP
+DOMAIN-SUFFIX,s2c.time.edu.cn,NTP
+
+# 清华大学提供的NTP服务
+DOMAIN-SUFFIX,s1b.time.edu.cn,NTP
+DOMAIN-SUFFIX,s1e.time.edu.cn,NTP
+DOMAIN-SUFFIX,s2a.time.edu.cn,NTP
+DOMAIN-SUFFIX,s2b.time.edu.cn,NTP
+
+# 北京大学提供的NTP服务
+DOMAIN-SUFFIX,s1c.time.edu.cn,NTP
+DOMAIN-SUFFIX,s2m.time.edu.cn,NTP
+
+# 东南大学提供的NTP服务
+DOMAIN-SUFFIX,s1d.time.edu.cn,NTP
+
+# 西南地区网络中心提供的NTP服务
+DOMAIN-SUFFIX,s2d.time.edu.cn,NTP
+
+# 西北地区网络中心提供的NTP服务
+DOMAIN-SUFFIX,s2e.time.edu.cn,NTP
+
+# 东北地区网络中心提供的NTP服务
+DOMAIN-SUFFIX,s2f.time.edu.cn,NTP
+
+# 华东南地区网络中心提供的NTP服务
+DOMAIN-SUFFIX,s2g.time.edu.cn,NTP
+
+# 四川大学网络管理中心提供的NTP服务
+DOMAIN-SUFFIX,s2h.time.edu.cn,NTP
+
+# CERNET桂林主节点提供的NTP服务
+DOMAIN-SUFFIX,s2k.time.edu.cn,NTP
+
+# 腾讯云提供的ntp服务
+DOMAIN-SUFFIX,time1.tencentyun.com,NTP
+DOMAIN-SUFFIX,time2.tencentyun.com,NTP
+DOMAIN-SUFFIX,time3.tencentyun.com,NTP
+DOMAIN-SUFFIX,time4.tencentyun.com,NTP
+DOMAIN-SUFFIX,time5.tencentyun.com,NTP
+DOMAIN-SUFFIX,time1.cloud.tencent.com,NTP
+DOMAIN-SUFFIX,time2.cloud.tencent.com,NTP
+DOMAIN-SUFFIX,time3.cloud.tencent.com,NTP
+DOMAIN-SUFFIX,time4.cloud.tencent.com,NTP
+DOMAIN-SUFFIX,time5.cloud.tencent.com,NTP
+
+# Apple提供的ntp服务
+DOMAIN-SUFFIX,time.apple.com,NTP
+DOMAIN-SUFFIX,time1.apple.com,NTP
+DOMAIN-SUFFIX,time2.apple.com,NTP
+DOMAIN-SUFFIX,time3.apple.com,NTP
+DOMAIN-SUFFIX,time4.apple.com,NTP
+DOMAIN-SUFFIX,time5.apple.com,NTP
+DOMAIN-SUFFIX,time6.apple.com,NTP
+DOMAIN-SUFFIX,time7.apple.com,NTP
+DOMAIN-SUFFIX,time.asia.apple.com,NTP
+
+# Google提供的ntp服务
+DOMAIN-SUFFIX,time1.google.com,NTP
+DOMAIN-SUFFIX,time2.google.com,NTP
+DOMAIN-SUFFIX,time3.google.com,NTP
+DOMAIN-SUFFIX,time4.google.com,NTP
+
+# 社区公用ntp服务池
+DOMAIN-SUFFIX,pool.ntp.org,NTP
+DOMAIN-SUFFIX,cn.ntp.org.cn,NTP
+DOMAIN-SUFFIX,edu.ntp.org.cn,NTP
+DOMAIN-SUFFIX,hk.ntp.org.cn,NTP
+DOMAIN-SUFFIX,tw.ntp.org.cn,NTP
+DOMAIN-SUFFIX,us.ntp.org.cn,NTP
+DOMAIN-SUFFIX,sgp.ntp.org.cn,NTP
+DOMAIN-SUFFIX,kr.ntp.org.cn,NTP
+DOMAIN-SUFFIX,jp.ntp.org.cn,NTP
+DOMAIN-SUFFIX,de.ntp.org.cn,NTP
+DOMAIN-SUFFIX,ina.ntp.org.cn,NTP
+
+# Windows提供的ntp服务
+DOMAIN-SUFFIX,time.windows.com,NTP
