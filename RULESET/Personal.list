@@ -21,6 +21,9 @@ DOMAIN-SUFFIX,cdndm5.com,PROXY
 # Direct list
 
 DOMAIN-SUFFIX,cloud.unity3d.com,DIRECT
+DOMAIN-SUFFIX,pool.ntp.org,DIRECT
+DOMAIN-SUFFIX,ntp.nasa.gov,DIRECT
+DOMAIN-SUFFIX,ess.apple.com,DIRECT
 
 # Reject list
 
