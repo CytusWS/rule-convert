@@ -24,6 +24,7 @@ DOMAIN-SUFFIX,cloud.unity3d.com,DIRECT
 DOMAIN-SUFFIX,pool.ntp.org,DIRECT
 DOMAIN-SUFFIX,ntp.nasa.gov,DIRECT
 DOMAIN-SUFFIX,ess.apple.com,DIRECT
+# DOMAIN-SUFFIX,ns.exitgames.com,DIRECT
 
 # Reject list
 
