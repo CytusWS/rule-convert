@@ -8,7 +8,7 @@ DOMAIN-SUFFIX,cdndm5.com,PROXY
 
 # UDP list
 DOMAIN-SUFFIX,ns.exitgames.com,ICYMACHAN
-IP-CIDR,169.56.24.252,ICYMACHAN
+IP-CIDR,169.56.24.0/24,ICYMACHAN
 
 # Google Firebase Messaging
 
