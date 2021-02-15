@@ -1,2 +1,7 @@
 payload:
   - DOMAIN-SUFFIX,cdp.cloud.unity3d.com
+  - DOMAIN-SUFFIX,cloud.unity3d.com
+  - DOMAIN-SUFFIX,pool.ntp.org
+  - DOMAIN-SUFFIX,ntp.nasa.gov
+  - DOMAIN-SUFFIX,ess.apple.com
+#  - DOMAIN-SUFFIX,ns.exitgames.com
