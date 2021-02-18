@@ -5,6 +5,7 @@ DOMAIN-SUFFIX,licdn.com,PROXY
 DOMAIN-SUFFIX,manhuaren.com,PROXY
 DOMAIN-SUFFIX,cdnmanhua.net,PROXY
 DOMAIN-SUFFIX,cdndm5.com,PROXY
+DOMAIN-KEYWORD,ocsp,PROXY
 
 # UDP list
 DOMAIN-SUFFIX,ns.exitgames.com,ICYMACHAN
