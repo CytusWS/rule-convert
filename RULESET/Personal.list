@@ -38,3 +38,4 @@ DOMAIN-SUFFIX,adservice.google.cn,REJECT
 DOMAIN-SUFFIX,unityads.unity.cn,REJECT
 DOMAIN-SUFFIX,unityads.unitychina.cn,REJECT
 DOMAIN-SUFFIX,px.ads.linkedin.cn,REJECT
+DOMAIN-SUFFIX,log.trackingio.com,REJECT
