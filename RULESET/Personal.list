@@ -9,8 +9,8 @@ DOMAIN-KEYWORD,ocsp,PROXY
 
 # UDP list
 
-DOMAIN-SUFFIX,ns.exitgames.com,ICYMACHAN
-IP-CIDR,169.56.24.0/24,ICYMACHAN
+# DOMAIN-SUFFIX,ns.exitgames.com,ICYMACHAN
+# IP-CIDR,169.56.24.0/24,ICYMACHAN
 
 # Google Firebase Messaging
 
