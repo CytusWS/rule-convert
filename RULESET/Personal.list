@@ -1,6 +1,6 @@
 # Proxy list
 
-DOMAIN-SUFFIX,googleapis.com,PROXY
+DOMAIN,fonts.googleapis.com,PROXY
 DOMAIN-SUFFIX,linkedin.com,PROXY
 DOMAIN-SUFFIX,licdn.com,PROXY
 DOMAIN-SUFFIX,manhuaren.com,PROXY
