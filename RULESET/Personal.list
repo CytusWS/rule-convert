@@ -1,5 +1,6 @@
 # Proxy list
 
+DOMAIN,fonts.gstatic.com,PROXY
 DOMAIN,fonts.googleapis.com,PROXY
 DOMAIN-SUFFIX,linkedin.com,PROXY
 DOMAIN-SUFFIX,licdn.com,PROXY
