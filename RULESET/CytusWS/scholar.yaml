@@ -11,6 +11,7 @@ payload:
   - DOMAIN-SUFFIX,cell.com
   - DOMAIN-SUFFIX,cas.org
   - DOMAIN-SUFFIX,ieee.org
+  - DOMAIN-SUFFIX,computer.org
   - DOMAIN-SUFFIX,acm.org
   - DOMAIN-SUFFIX,acs.org
   - DOMAIN-SUFFIX,agu.org
