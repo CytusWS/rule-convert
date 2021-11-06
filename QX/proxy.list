@@ -1,0 +1,20 @@
+# Proxy list
+
+DOMAIN,fonts.gstatic.com,PROXY
+DOMAIN,fonts.googleapis.com,PROXY
+DOMAIN,update.googleapis.com,PROXY
+DOMAIN,update.gstatic.com,PROXY
+DOMAIN-SUFFIX,recaptcha.net,PROXY
+DOMAIN-SUFFIX,linkedin.com,PROXY
+DOMAIN-SUFFIX,licdn.com,PROXY
+DOMAIN-SUFFIX,manhuaren.com,PROXY
+DOMAIN-SUFFIX,safebrowsing.apple,PROXY
+DOMAIN-SUFFIX,cdnmanhua.net,PROXY
+DOMAIN-SUFFIX,cdndm5.com,PROXY
+DOMAIN-SUFFIX,cdn.segment.com,PROXY
+DOMAIN-KEYWORD,ocsp,PROXY
+
+# F*cking JP Game Providers
+
+# DOMAIN-SUFFIX,cygames.jp,JP
+# DOMAIN-SUFFIX,colorfulpalette.org,HK

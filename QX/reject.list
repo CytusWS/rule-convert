@@ -1,0 +1,10 @@
+DOMAIN-SUFFIX,config.unityads.unity3d.com,REJECT
+DOMAIN-SUFFIX,adservice.google.cn,REJECT
+DOMAIN-SUFFIX,unityads.unity.cn,REJECT
+DOMAIN-SUFFIX,unityads.unitychina.cn,REJECT
+DOMAIN-SUFFIX,px.ads.linkedin.cn,REJECT
+DOMAIN-SUFFIX,log.trackingio.com,REJECT
+DOMAIN-SUFFIX,f.360.cn,REJECT
+DOMAIN-SUFFIX,googletagmanager.com,REJECT
+DOMAIN-SUFFIX,jpush.cn,REJECT
+DOMAIN-SUFFIX,mob.com,REJECT
