@@ -110,6 +110,7 @@ payload:
   - DOMAIN-SUFFIX,onepetro.org
   - DOMAIN-SUFFIX,osapublishing.org
   - DOMAIN-SUFFIX,oxfordjournals.org
+  - DOMAIN-SUFFIX,oup.com
   - DOMAIN-SUFFIX,pnas.org
   - DOMAIN-SUFFIX,projecteuclid.org
   - DOMAIN-SUFFIX,proquest.com
