@@ -1,3 +1,4 @@
 payload:
   - DOMAIN-SUFFIX,api.bilibili.com
   - DOMAIN-SUFFIX,api.bilibili.tv
+  - DOMAIN-SUFFIX,bilibili.tv
