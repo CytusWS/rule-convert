@@ -1,5 +1,7 @@
 payload:
   - DOMAIN-SUFFIX,api.bilibili.com
   - DOMAIN-SUFFIX,api.bilibili.tv
+  - DOMAIN-SUFFIX,biliintl.com
+  - DOMAIN-SUFFIX,biliapi.net
   - DOMAIN,www.bilibili.tv
   - DOMAIN,www.bilibili.com
