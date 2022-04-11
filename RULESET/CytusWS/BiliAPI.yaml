@@ -5,3 +5,4 @@ payload:
   - DOMAIN-SUFFIX,biliapi.net
   - DOMAIN,www.bilibili.tv
   - DOMAIN,www.bilibili.com
+  - DOMAIN,apm-misaka.biliapi.net
