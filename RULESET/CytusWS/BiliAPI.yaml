@@ -6,5 +6,7 @@ payload:
   - DOMAIN-SUFFIX,biliapi.com
   - DOMAIN,www.bilibili.tv
   - DOMAIN,www.bilibili.com
+  - DOMAIN,data.bilibili.tv
+  - DOMAIN,data.bilibili.com
   - DOMAIN,apm-misaka.biliapi.net
   - DOMAIN,app.bilibili.com
