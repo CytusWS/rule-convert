@@ -5,6 +5,7 @@ payload:
   - DOMAIN-SUFFIX,biliapi.net
   - DOMAIN-SUFFIX,biliapi.com
   - DOMAIN,www.bilibili.com
+  - DOMAIN,m.bilibili.com
   - DOMAIN,data.bilibili.com
   - DOMAIN,passport.bilibili.com
   - DOMAIN,apm-misaka.biliapi.net
