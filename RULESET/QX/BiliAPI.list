@@ -1,11 +1,10 @@
 DOMAIN-SUFFIX,api.bilibili.com,Bilibili
-DOMAIN-SUFFIX,api.bilibili.tv,Bilibili
+DOMAIN-SUFFIX,bilibili.tv,Bilibili
 DOMAIN-SUFFIX,biliintl.com,Bilibili
 DOMAIN-SUFFIX,biliapi.net,Bilibili
 DOMAIN-SUFFIX,biliapi.com,Bilibili
-DOMAIN,www.bilibili.tv,Bilibili
 DOMAIN,www.bilibili.com,Bilibili
-DOMAIN,data.bilibili.tv,Bilibili
-Domain,data.bilibili.com,Bilibili
+DOMAIN,m.bilibili.com,Bilibili
+DOMAIN,data.bilibili.com,Bilibili
 DOMAIN,apm-misaka.biliapi.net,Bilibili
 DOMAIN,app.bilibili.com,Bilibili
