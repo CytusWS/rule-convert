@@ -10,3 +10,4 @@ payload:
   - DOMAIN,passport.bilibili.com
   - DOMAIN,apm-misaka.biliapi.net
   - DOMAIN,app.bilibili.com
+  - DOMAIN,s.bstarstatic.com
