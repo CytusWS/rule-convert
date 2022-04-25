@@ -2,6 +2,7 @@ DOMAIN-SUFFIX,config.unityads.unity3d.com,REJECT
 DOMAIN-SUFFIX,adservice.google.cn,REJECT
 DOMAIN-SUFFIX,app-measurement.com,REJECT
 DOMAIN-KEYWORD,app.adjust,REJECT
+DOMAIN-KEYWORD,umeng,REJECT
 DOMAIN-SUFFIX,unityads.unity.cn,REJECT
 DOMAIN-SUFFIX,unityads.unitychina.cn,REJECT
 DOMAIN-SUFFIX,px.ads.linkedin.cn,REJECT
