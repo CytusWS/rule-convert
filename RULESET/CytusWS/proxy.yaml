@@ -1,6 +1,7 @@
 payload:
   - DOMAIN-SUFFIX,linkedin.com
   - DOMAIN-SUFFIX,licdn.com
+  - DOMAIN-SUFFIX,bing.net
   - DOMAIN-SUFFIX,manhuaren.com
   - DOMAIN-SUFFIX,cdnmanhua.net
   - DOMAIN-SUFFIX,cdndm5.com
