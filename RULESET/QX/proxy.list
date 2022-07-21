@@ -8,6 +8,7 @@ DOMAIN-SUFFIX,recaptcha.net,PROXY
 DOMAIN-SUFFIX,clients6.google.com,PROXY
 DOMAIN-SUFFIX,linkedin.com,PROXY
 DOMAIN-SUFFIX,licdn.com,PROXY
+DOMAIN-SUFFIX,bing.net,PROXY
 DOMAIN-SUFFIX,manhuaren.com,PROXY
 DOMAIN-SUFFIX,safebrowsing.apple,PROXY
 DOMAIN-SUFFIX,cdnmanhua.net,PROXY
