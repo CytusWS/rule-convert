@@ -9,3 +9,4 @@ payload:
   - DOMAIN-SUFFIX,googletagmanager.com
   - DOMAIN-SUFFIX,jpush.cn
   - DOMAIN-SUFFIX,mob.com
+  - DOMAIN,grpc.biliapi.net
