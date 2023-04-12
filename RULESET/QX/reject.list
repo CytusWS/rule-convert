@@ -7,6 +7,7 @@ DOMAIN-KEYWORD,umeng,REJECT
 DOMAIN-SUFFIX,unityads.unity.cn,REJECT
 DOMAIN-SUFFIX,unityads.unitychina.cn,REJECT
 DOMAIN-SUFFIX,px.ads.linkedin.cn,REJECT
+DOMAIN-SUFFIX,events.data.microsoft.com,REJECT
 DOMAIN-SUFFIX,f.360.cn,REJECT
 DOMAIN-SUFFIX,googletagmanager.com,REJECT
 DOMAIN-SUFFIX,jpush.cn,REJECT
