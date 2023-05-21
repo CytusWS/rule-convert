@@ -1,6 +1,4 @@
 payload:
-#  - DOMAIN-SUFFIX,cdp.cloud.unity3d.com
-#  - DOMAIN-SUFFIX,cloud.unity3d.com
   - DOMAIN-SUFFIX,pool.ntp.org
   - DOMAIN-SUFFIX,steampowered.com
   - DOMAIN-SUFFIX,msftconnecttest.com
