@@ -1,7 +1,7 @@
 # Direct list
 
 # DOMAIN-KEYWORD,paypal,DIRECT
-DOMAIN-SUFFIX,cloud.unity3d.com,DIRECT
+# DOMAIN-SUFFIX,cloud.unity3d.com,DIRECT
 DOMAIN-SUFFIX,pool.ntp.org,DIRECT
 DOMAIN-SUFFIX,ntp.nasa.gov,DIRECT
 DOMAIN-SUFFIX,captive.apple.com,DIRECT
