@@ -11,6 +11,7 @@ payload:
   - DOMAIN-SUFFIX,googletagmanager.com
   - DOMAIN-SUFFIX,jpush.cn
   - DOMAIN-SUFFIX,mob.com
+  - DOMAIN-SUFFIX,heapanalytics.com
   - DOMAIN-KEYWORD,log.trackingio.com
   - DOMAIN-KEYWORD,cloudflareinsights
   - DOMAIN,grpc.biliapi.net
