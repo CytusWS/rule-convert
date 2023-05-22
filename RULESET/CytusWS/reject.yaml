@@ -15,4 +15,4 @@ payload:
   - DOMAIN-KEYWORD,log.trackingio.com
   - DOMAIN-KEYWORD,cloudflareinsights
   - DOMAIN,grpc.biliapi.net
-  - DOMAIN,license.unity.cn
+#  - DOMAIN,license.unity.cn
