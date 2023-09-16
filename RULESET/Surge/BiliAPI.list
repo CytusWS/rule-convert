@@ -1,0 +1,17 @@
+DOMAIN-SUFFIX,api.bilibili.com
+DOMAIN-SUFFIX,api.live.bilibili.com
+DOMAIN-SUFFIX,api.vc.bilibili.com
+DOMAIN-SUFFIX,bilibili.tv
+DOMAIN-SUFFIX,bilibili.com
+DOMAIN-SUFFIX,biliintl.com
+DOMAIN-SUFFIX,biliapi.net
+DOMAIN-SUFFIX,biliapi.com
+DOMAIN,www.bilibili.com
+DOMAIN,m.bilibili.com
+DOMAIN,t.bilibili.com
+DOMAIN,data.bilibili.com
+DOMAIN,apm-misaka.biliapi.net
+DOMAIN,app.bilibili.com
+DOMAIN,s.bstarstatic.com
+DOMAIN,activity.hdslb.com
+IP-CIDR,203.107.1.0/24,no-resolve
