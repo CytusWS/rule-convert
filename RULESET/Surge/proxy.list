@@ -9,4 +9,6 @@ DOMAIN-SUFFIX,manhuaren.com
 DOMAIN-SUFFIX,safebrowsing.apple
 DOMAIN-SUFFIX,cdnmanhua.net
 DOMAIN-SUFFIX,cdndm5.com
+DOMAIN-SUFFIX,lencr.org
 DOMAIN-KEYWORD,ocsp
+DOMAIN-KEYWORD,crt
