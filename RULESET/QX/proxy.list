@@ -14,7 +14,9 @@ DOMAIN-SUFFIX,safebrowsing.apple,PROXY
 DOMAIN-SUFFIX,cdnmanhua.net,PROXY
 DOMAIN-SUFFIX,cdndm5.com,PROXY
 DOMAIN-SUFFIX,cdn.segment.com,PROXY
+DOMAIN-SUFFIX,lencr.org,PROXY
 DOMAIN-KEYWORD,ocsp,PROXY
+DOAMIN-KEYWORD,crt,PROXY
 
 # F*cking JP Game Providers
 
