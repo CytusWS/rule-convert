@@ -2,9 +2,12 @@ payload:
   - DOMAIN-SUFFIX,linkedin.com
   - DOMAIN-SUFFIX,licdn.com
   - DOMAIN-SUFFIX,bing.net
+  - DOMAIN-SUFFIX,lencr.org
   - DOMAIN-SUFFIX,manhuaren.com
   - DOMAIN-SUFFIX,cdnmanhua.net
   - DOMAIN-SUFFIX,cdndm5.com
   - DOMAIN-SUFFIX,cdn.segment.com
   - DOMAIN-SUFFIX,clients6.google.com
   - DOMAIN,ps5.np.playstation.net
+  - DOMAIN-KEYWORD,ocsp
+  - DOMAIN-KEYWORD,crt
