@@ -14,5 +14,7 @@ payload:
   - DOMAIN-SUFFIX,heapanalytics.com
   - DOMAIN-KEYWORD,log.trackingio.com
   - DOMAIN-KEYWORD,cloudflareinsights
-  - DOMAIN,grpc.biliapi.net
+  - DOMAIN-KEYWORD,adservice
+#  - DOMAIN,grpc.biliapi.net
+  - DOMAIN,amdc.alipay.com
 #  - DOMAIN,license.unity.cn
