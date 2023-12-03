@@ -3,6 +3,6 @@ payload:
   - DOMAIN-SUFFIX,steampowered.com
   - DOMAIN-SUFFIX,msftconnecttest.com
   - DOMAIN-SUFFIX,msftncsi.com
-  - DOMAIN,ctldl.windowsupdate.com
+  - DOMAIN-SUFFIX,windowsupdate.com
 #  - DOMAIN-SUFFIX,ess.apple.com
 #  - DOMAIN-SUFFIX,ns.exitgames.com
