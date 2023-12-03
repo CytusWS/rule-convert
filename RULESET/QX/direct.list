@@ -13,5 +13,5 @@ DOMAIN-SUFFIX,paypal.com,DIRECT
 DOMAIN-SUFFIX,paypal.me,DIRECT
 # DOMAIN-SUFFIX,ns.exitgames.com,DIRECT
 DOMAIN-SUFFIX,arcaeareplica.xyz,DIRECT
-DOMAIN,cltdl.windowsupdate.com,DIRECT
+DOMAIN-SUFFIX,windowsupdate.com,DIRECT
 IP-CIDR,198.18.0.1/16,DIRECT
