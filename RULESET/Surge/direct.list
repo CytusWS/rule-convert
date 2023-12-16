@@ -2,3 +2,6 @@ DOMAIN-SUFFIX,pool.ntp.org
 DOMAIN-SUFFIX,wechat.com
 DOMAIN-SUFFIX,arcaeareplica.xyz
 DOMAIN-SUFFIX,windowsupdate.com
+DOMAIN-KEYWORD,cn-ssl.ls.apple.com
+DOMAIN-KEYWORD,cn.ls.apple.com
+DOMAIN,gs-loc-cn.apple.com
