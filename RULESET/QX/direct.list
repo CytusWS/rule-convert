@@ -1,17 +1,16 @@
 # Direct list
 
-# DOMAIN-KEYWORD,paypal,DIRECT
-# DOMAIN-SUFFIX,cloud.unity3d.com,DIRECT
 DOMAIN-SUFFIX,pool.ntp.org,DIRECT
 DOMAIN-SUFFIX,ntp.nasa.gov,DIRECT
 DOMAIN-SUFFIX,captive.apple.com,DIRECT
-# DOMAIN-SUFFIX,ess.apple.com,DIRECT
 DOMAIN-SUFFIX,wechat.com,DIRECT
-DOMAIN-SUFFIX,qpic.cn,DIRECT
 DOMAIN-SUFFIX,paypal.com,DIRECT
-# DOMAIN-SUFFIX,paypalobject.com,DIRECT
 DOMAIN-SUFFIX,paypal.me,DIRECT
-# DOMAIN-SUFFIX,ns.exitgames.com,DIRECT
 DOMAIN-SUFFIX,arcaeareplica.xyz,DIRECT
 DOMAIN-SUFFIX,windowsupdate.com,DIRECT
+DOMAIN-KEYWORD,cn-ssl.ls.apple.com,DIRECT
+DOMAIN-KEYWORD,cn.ls.apple.com,DIRECT
+DOMAIN-KEYWORD,sh-pod2-smp-device,DIRECT
+DOMAIN,gs-loc-cn.apple.com,DIRECT
+DOMAIN,cl2-cn.apple.com,DIRECT
 IP-CIDR,198.18.0.1/16,DIRECT
