@@ -10,7 +10,6 @@ DOMAIN-SUFFIX,arcaeareplica.xyz,DIRECT
 DOMAIN-SUFFIX,windowsupdate.com,DIRECT
 DOMAIN-KEYWORD,cn-ssl.ls.apple.com,DIRECT
 DOMAIN-KEYWORD,cn.ls.apple.com,DIRECT
+DOMAIN-KEYWORD,cn.apple.com,DIRECT
 DOMAIN-KEYWORD,sh-pod2-smp-device,DIRECT
-DOMAIN,gs-loc-cn.apple.com,DIRECT
-DOMAIN,cl2-cn.apple.com,DIRECT
 IP-CIDR,198.18.0.1/16,DIRECT
