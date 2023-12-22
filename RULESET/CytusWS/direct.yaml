@@ -4,5 +4,10 @@ payload:
   - DOMAIN-SUFFIX,msftconnecttest.com
   - DOMAIN-SUFFIX,msftncsi.com
   - DOMAIN-SUFFIX,windowsupdate.com
+  - DOMAIN-KEYWORD,cn-ssl.ls.apple.com
+  - DOMAIN-KEYWORD,cn.ls.apple.com
+  - DOMAIN-KEYWORD,cn.apple.com
+  - DOMAIN-KEYWORD,sh-pod2-smp-device
+  - DOMAIN,captive.apple.com
 #  - DOMAIN-SUFFIX,ess.apple.com
 #  - DOMAIN-SUFFIX,ns.exitgames.com
