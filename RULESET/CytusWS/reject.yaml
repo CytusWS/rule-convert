@@ -18,4 +18,5 @@ payload:
   - DOMAIN-KEYWORD,adservice
 #  - DOMAIN,grpc.biliapi.net
   - DOMAIN,amdc.alipay.com
+  - DOMAIN,cm.bilibili.com
 #  - DOMAIN,license.unity.cn
