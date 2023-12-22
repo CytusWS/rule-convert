@@ -17,4 +17,5 @@ DOMAIN-SUFFIX,vzuu.com,REJECT
 DOMAIN-SUFFIX,heapanalytics.com,REJECT
 DOMAIN-KEYWORD,cloudflareinsights,REJECT
 DOMAIN-KEYWORD,log.trackingio.com,REJECT
+DOMAIN,cm.bilibili.com,REJECT
 # DOMAIN,grpc.biliapi.net,REJECT
