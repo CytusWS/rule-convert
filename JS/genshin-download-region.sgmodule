@@ -1,0 +1,8 @@
+#!name=Genshin CN oversea download CDN
+#!desc=Switch Genshin CN bundle's download CDN to oversea ones to get better download performance.
+
+[URL Rewrite]
+^https?:\/\/autopatchcn\.yuanshen\.com https://autopatchhk.yuanshen.com 302
+
+[MITM]
+hostname = %APPEND% *.yuanshen.com
