@@ -7,6 +7,7 @@ payload:
   - DOMAIN-SUFFIX,biliintl.com
   - DOMAIN-SUFFIX,biliapi.net
   - DOMAIN-SUFFIX,biliapi.com
+  - DOMAIN-KEYWORD,passport.bili
   - DOMAIN,www.bilibili.com
   - DOMAIN,m.bilibili.com
   - DOMAIN,t.bilibili.com
