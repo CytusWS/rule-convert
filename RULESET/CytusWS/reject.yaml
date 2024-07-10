@@ -7,6 +7,7 @@ payload:
   - DOMAIN-SUFFIX,ads.linkedin.cn
   - DOMAIN-SUFFIX,ads.linkedin.com
   - DOMAIN-SUFFIX,events.data.microsoft.com
+  - DOMAIN-SUFFIX,events.data.msn.com
   - DOMAIN-SUFFIX,flash.cn
   - DOMAIN-SUFFIX,f.360.cn
   - DOMAIN-SUFFIX,googletagmanager.com
@@ -16,6 +17,8 @@ payload:
   - DOMAIN-KEYWORD,log.trackingio.com
   - DOMAIN-KEYWORD,cloudflareinsights
   - DOMAIN-KEYWORD,adservice
+  - DOMAIN-KEYWORD,app.adjust
+  - DOMAIN-KEYWORD,analytics.adjust
 #  - DOMAIN,grpc.biliapi.net
   - DOMAIN,amdc.alipay.com
   - DOMAIN,cm.bilibili.com
