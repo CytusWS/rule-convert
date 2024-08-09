@@ -2,6 +2,7 @@ payload:
   - DOMAIN-SUFFIX,config.unityads.unity3d.com
   - DOMAIN-SUFFIX,adservice.google.cn
   - DOMAIN-SUFFIX,app-measurement.com
+  - DOMAIN-SUFFIX,app-analytics-services.com
   - DOMAIN-SUFFIX,unityads.unity.cn
   - DOMAIN-SUFFIX,unityads.unitychina.cn
   - DOMAIN-SUFFIX,ads.linkedin.cn
