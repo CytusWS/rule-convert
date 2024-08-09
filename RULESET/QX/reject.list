@@ -1,6 +1,7 @@
 DOMAIN-SUFFIX,config.unityads.unity3d.com,REJECT
 DOMAIN-SUFFIX,adservice.google.cn,REJECT
 DOMAIN-SUFFIX,app-measurement.com,REJECT
+DOMAIN-SUFFIX,app-analytics-services.com,REJECT
 DOMAIN-KEYWORD,app.adjust,REJECT
 DOMAIN-KEYWORD,httpdns,REJECT
 DOMAIN-KEYWORD,umeng,REJECT
