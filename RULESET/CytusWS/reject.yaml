@@ -24,3 +24,12 @@ payload:
   - DOMAIN,amdc.alipay.com
   - DOMAIN,cm.bilibili.com
 #  - DOMAIN,license.unity.cn
+
+  # Adobe
+  - DOMAIN-SUFFIX,adobestats.io
+  - DOMAIN-SUFFIX,geo2.adobe.com
+  - DOMAIN-SUFFIX,adobedtm.com
+  - DOMAIN-SUFFIX,crs.cr.adobe.com
+  - DOMAIN-SUFFIX,sentry.io
+  - DOMAIN-SUFFIX,services.adobe.com
+  - DOMAIN-SUFFIX,adobe.io
