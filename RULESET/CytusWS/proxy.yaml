@@ -9,5 +9,6 @@ payload:
   - DOMAIN-SUFFIX,cdn.segment.com
   - DOMAIN-SUFFIX,clients6.google.com
   - DOMAIN,ps5.np.playstation.net
+  - DOMAIN,lcs-cops.adobe.io
   - DOMAIN-KEYWORD,ocsp
   - DOMAIN-KEYWORD,crt
