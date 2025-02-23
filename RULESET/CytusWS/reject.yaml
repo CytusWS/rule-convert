@@ -18,8 +18,8 @@ payload:
   - DOMAIN-KEYWORD,log.trackingio.com
   - DOMAIN-KEYWORD,cloudflareinsights
   - DOMAIN-KEYWORD,adservice
-  - DOMAIN-KEYWORD,app.adjust
-  - DOMAIN-KEYWORD,analytics.adjust
+#  - DOMAIN-KEYWORD,app.adjust
+#  - DOMAIN-KEYWORD,analytics.adjust
 #  - DOMAIN,grpc.biliapi.net
   - DOMAIN,amdc.alipay.com
   - DOMAIN,cm.bilibili.com
