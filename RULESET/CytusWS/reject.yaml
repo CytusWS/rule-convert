@@ -23,6 +23,8 @@ payload:
 #  - DOMAIN,grpc.biliapi.net
   - DOMAIN,amdc.alipay.com
   - DOMAIN,cm.bilibili.com
+  - DOMAIN,honeycomb.wpscdn.cn
+  - DOMAIN,honeycomb.wps.cn
 #  - DOMAIN,license.unity.cn
 # Adobe
   - DOMAIN-SUFFIX,adobestats.io
