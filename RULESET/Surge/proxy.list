@@ -12,6 +12,7 @@ DOMAIN-SUFFIX,cdndm5.com
 DOMAIN-SUFFIX,lencr.org
 DOMAIN-SUFFIX,mixpanel.com
 DOMAIN,lcs-cops.adobe.io
+DOMAIN,auth.services.adobe.com
 DOMAIN-KEYWORD,ocsp
 DOMAIN-KEYWORD,crt
 DOMAIN-KEYWORD,crl
