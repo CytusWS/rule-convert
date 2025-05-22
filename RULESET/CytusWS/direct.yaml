@@ -9,5 +9,9 @@ payload:
   - DOMAIN-KEYWORD,cn.apple.com
   - DOMAIN-KEYWORD,sh-pod2-smp-device
   - DOMAIN,captive.apple.com
+  - IP-ASN,45090,no-resolve
+  - IP-ASN,132591,no-resolve
+  - IP-ASN,132203,no-resolve
+  - IP-ASN,139341,no-resolve
 #  - DOMAIN-SUFFIX,ess.apple.com
 #  - DOMAIN-SUFFIX,ns.exitgames.com
