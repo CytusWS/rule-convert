@@ -10,6 +10,6 @@ payload:
   - DOMAIN-SUFFIX,clients6.google.com
   - DOMAIN,ps5.np.playstation.net
   - DOMAIN,lcs-cops.adobe.io
-  - DOAMIN,auth.services.adobe.com
+  - DOMAIN,auth.services.adobe.com
   - DOMAIN-KEYWORD,ocsp
   - DOMAIN-KEYWORD,crt
